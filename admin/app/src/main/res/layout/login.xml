@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <com.example.admin.CircleImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="114dp"
+            android:src="@drawable/avator"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="50dp"
+            />
+
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="400dp"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:hint="请输入您的用户名"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="400dp"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <LinearLayout
+            android:layout_width="403dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="377dp">
+
+            <CheckBox
+                android:id="@+id/remember_password"
+                android:layout_width="30dp"
+                android:height="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="记住密码" />
+
+            <TextView
+                android:id="@+id/et_login_edit_password"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:text="修改密码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="412dp"
+            android:layout_height="192dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-5dp"
+            tools:layout_editor_absoluteY="468dp">
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#0000FF"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/bt_login_registry"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#FF0000"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:text="注册" />
+
+            <Button
+                android:id="@+id/bt_login_logout"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#770077"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:text="注销" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
